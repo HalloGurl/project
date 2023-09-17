@@ -4,136 +4,178 @@
     <title>Genshin Forum</title>
     <style>
         body{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: oblique;
-            background-color: beige;
-            margin-left: 2%;
-            }
-        h2{
-            color: darkslategray;
-            text-decoration: underline;
-        }
-        aside{
-            border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    background-color: beige;
+    margin-left: 2%;
+    }
+h2{
+    color: darkslategray;
+    text-decoration: underline;
+}
+aside{
+    border-radius: 10px;
+    border: 2px;
+    border-style: groove;
+    background-color: antiquewhite;
+    margin-left: 1000px;
+    margin-right: 20px;
+}
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+table,tr{
             border: 2px;
-            border-style: groove;
-            background-color: antiquewhite;
-            margin-left: 1000px;
-            margin-right: 20px;
-        }
-        table,tr{
-                    border: 2px;
-                    border-style: collapse;
-                    border-bottom: 2px solid;
-                    border-color: aquamarine;
-                    border-collapse: collapse;
+            border-style: collapse;
+            border-bottom: 2px solid;
+            border-color: aquamarine;
+            border-collapse: collapse;
 
-            }
-            td{padding-left: 5px;}
-            tr:hover{background-color: violet;}
-            
-        #Class ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: biege;
+    }
+    td{padding-left: 5px;}
+    tr:hover{background-color: violet;}
+    
+#Class ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:beige;
+    }
+
+#Class li {
+    float: left;
+    }
+#Class li{
+    cursor: pointer;
+}
+
+#Class li a {
+    display: inline-block;
+    color: white;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+#Class li a:hover {
+    background-color: #111;
+    }
+.active {
+    background-color: red;
+    }
+
+    .column {
+                float: left;
+                width: 25%;
+                padding: 0 10px;
             }
 
-        #Class li {
-            float: left;
-            }
-        #Class li{
-            cursor: pointer;
-        }
+                /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
 
-        #Class li b {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
+                /* Clear floats after the columns */
+    .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
 
-        #Class li b:hover {
-            background-color: #111;
-            }
-        .active {
-            background-color: red;
-            }
-        a:link {
-                color: burlywood;
-                background-color: red;
-                text-decoration: none;
-                padding: 15px 25px;
+                /* Responsive columns */
+    @media screen and (max-width: 600px) {
+        .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                }
+
+                /* Style the counter cards */
+    .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 10px;
                 text-align: center;
-                display: inline-block;
-                border-radius: 10px;
-            }
-         a:visited {
-                    color: royalblue;
-                    background-color: gold;
-                    text-decoration: none;
-                    padding: 15px 25px;
-                    text-align: center;
-                    display: inline-block;
-                    border-radius: 10px;
+                background-color: white;
+                overflow: scroll;
+                }
+    .card:hover{
+        box-shadow: 0px 10px 10px 0px;
+    }
+    a:link {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
 
-            }
-         a:hover {
-                    color: chocolate;
-                    background-color: bisque;
-                    text-decoration: none;
-                    padding: 15px 25px;
-                    text-align: center;
-                    display: inline-block;
-                    border-radius: 10px;
-            }
-        a:active {
-                    color: aqua;
-                    background-color: darkblue;
-                    text-decoration: none;
-                    padding: 15px 25px;
-                    text-align: center;
-                    display: inline-block;
-                    border-radius: 10px;
-            }
-            .column {
-                        float: left;
-                        width: 25%;
-                        padding: 0 10px;
-                    }
+    a:visited {
+            color: black;
+            background-color: #f1f1f1;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px;
 
-                        /* Remove extra left and right margins, due to padding */
-            .row {margin: 0 -5px;}
-
-                        /* Clear floats after the columns */
-            .row:after {
-                        content: "";
-                        display: table;
-                        clear: both;
-                        }
-
-                        /* Responsive columns */
-            @media screen and (max-width: 600px) {
-                .column {
-                            width: 100%;
-                            display: block;
-                            margin-bottom: 20px;
-                        }
-                        }
-
-                        /* Style the counter cards */
-            .card {
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                        padding: 10px;
-                        text-align: center;
-                        background-color: white;
-                        overflow: scroll;
-                        }
-            .card:hover{
-                box-shadow: 0px 10px 10px 0px;
-            }
+    }
+ a:hover {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px;
+    }
+a:active {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px;
+        }
     </style>
 </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,7 +188,7 @@
             <br>
             <a href = "https://genshin.hoyoverse.com/" target="_blank">Genshin impact</a><br><br>
             <div id="Class">
-                <ul>
+                <ul>   
                     <li><a href="#R">Region</a></li>
                     <li><a href="#A">Archon</a></li>
                     <li><a href="#S">Sibling</a></li>
@@ -247,9 +289,20 @@
                 <br>
                 <h3 id="S">Sibling</h3><br>
 
-
-                <h3 id="C">Charecters</h3><br>
-                <h2 style="text-align: center; border-radius: 10px; background-color: burlywood;">Electro</h2>
+                <div class ="dropdown">
+                    <h3 id="C">Charecters</h3><br>
+                    <button class="dropbtn">Element selection</button>
+                    <div class="dropdown-content">
+                        <a href="#Electro">Electro</a><br>
+                        <a href="#Geo">Geo</a><br>
+                        <a href="#Pyro">Pyro</a><br>
+                        <a href="#dendro">Dendro</a><br>
+                        <a href="#Cryo">Cryo</a><br>
+                        <a href="#Hydro">Hydro</a><br>
+                        <a href="#Anemo">Anemo</a><br>
+                    </div>
+                </div>
+                <h2 id="Electro" style="text-align: center; border-radius: 10px; background-color: burlywood;">Electro</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -364,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 style="text-align: center; border-radius: 10px; background-color: burlywood;">Geo</h2>
+                <h2 id="Geo" style="text-align: center; border-radius: 10px; background-color: burlywood;">Geo</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -433,7 +486,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 style="text-align: center; background-color: burlywood; border-radius: 10px;">Pyro</h2>
+                <h2 id="Pyro" style="text-align: center; background-color: burlywood; border-radius: 10px;">Pyro</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -514,7 +567,7 @@
                         </div>
                     </div>
                 </div><br>
-                <h2 style="text-align: center; background-color: burlywood; border-radius: 10px;">Dendro</h2>
+                <h2 id="Dendro" style="text-align: center; background-color: burlywood; border-radius: 10px;">Dendro</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -563,7 +616,7 @@
                         </div>
                     </div>
                 </div><br>
-                <h2 style="text-align: center; background-color: burlywood; border-radius: 10px;">Cryo</h2>
+                <h2 id="Cryo" style="text-align: center; background-color: burlywood; border-radius: 10px;">Cryo</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -644,7 +697,7 @@
                         </div>
                     </div>
                 </div><br>
-                <h2 style="text-align: center; background-color: burlywood; border-radius: 10px;">Hydro</h2>
+                <h2  id="Hydro" style="text-align: center; background-color: burlywood; border-radius: 10px;">Hydro</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
@@ -693,7 +746,7 @@
                         </div>
                     </div>
                 </div><br>
-                <h2 style="text-align: center; background-color: burlywood; border-radius: 10px;">Anemo</h2>
+                <h2 id="Anemo" style="text-align: center; background-color: burlywood; border-radius: 10px;">Anemo</h2>
                 <div class="row">
                     <div class="column">
                         <div class="card">
